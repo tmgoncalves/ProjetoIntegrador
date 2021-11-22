@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<form method="get">
+  <!-- Cabeçalho -->
+  <header class="w3-display-container w3-content w3-wide" id="home">
+    <br><br>
+    <img class="w3-image" src="{{ url_for('static', filename='sustentabilidade-empresarial.jpeg')}}" alt="Logotipo do curso" border="0">
+    <br><br><br><br><br>
+    <div class="w3-display-bottomleft w3-padding-large w3-opacity ">
+      <link rel="stylesheet" href="css/style.css">
+      <h1 class="w3-xxlarge">Integração Coletores & Sustentabilidade</h1>
+    </div>
+  </header>
+
+
+  <div class="w3-row w3-padding-64" id="sobre">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <a href="#"><img src="{{ url_for('static', filename='coleta-de-materiais-reciclaveis-em-osasco-sp-02.png')}}"  class="w3-round w3-image w3-opacity-min" alt="Table Setting" border="0"></a>
+    </div>
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">O PROJETO</h1><br>
+      <h5 class="w3-center">Duração: 1 Semestre</h5>
+      <p class="w3-large">
+          Esse Projeto Integrador consiste em integrar coletores de sucatas e empresas em uma mesma plataforma, com o objetivo de informar, de forma ágil, os endereços onde sucatas devem ser coletadas. Isso melhora a eficiência dos coletores de sucata bem como evitar o descarte de sucate em lugares errados.
+         </p>
+    </div>
+  </div>
+
+  <!-- Disciplinas -->
+<div class="w3-row w3-padding-64" id="disciplinas">
+  <h1 class="w3-center">Alunos Envolvidos</h1>
+  <br>
+  <div class="w3-col l6 w3-padding-large">
+    <h3>Polo: Osasco</h3>
+    <p class="w3-text-grey">
+    <h5>Luiz Bruno Wurthmann Junior</h5>
+    <h5> <br> Maria Auxiliadora de Alencar Coelho</h5>
+    <h5><br> Pedro Henrique Lopes Rufino</h5>
+    <h5><br> Thiago Marinho Gonçalves</h5>
+    <h5><br> Yuri Pelichek Bueno</h5>
+    </p>
+    <br>
+  </div>
+  <div class="w3-col l6 w3-padding-large">
+    <img src="{{ url_for('static', filename='thumb-univesp.jpeg')}}" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:80%">
+  </div>
+</div>
+</form>
+{% endblock %}
