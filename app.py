@@ -73,7 +73,7 @@ def delete(id):
     post = get_post(id)
     db.session.delete(post)
     db.session.commit()
-    flash('"{}" foi apagado com sucesso !'.format(post.title))
+    flash('O material localizado em {} foi coletado com sucesso !!'.format(post.title))
     return redirect(url_for('index'))
 
 @app.route('/projeto', methods=('GET', 'POST'))
